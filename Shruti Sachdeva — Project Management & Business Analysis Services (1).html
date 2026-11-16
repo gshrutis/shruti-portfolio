@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shruti Sachdeva — Project Management &amp; Business Analysis Services</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f6f4ef;--surf:#fff;--ink:#0b1530;--mute:#586078;--line:#e2ded3;--acc:#b8662f;--acc2:#0f766e;--chip:#efeadf;--hero:#0b1530;--hi:#f6f4ef;--btn:#b8662f;--bi:#fff;--nav:rgba(246,244,239,.88);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1020;--surf:#141b30;--ink:#ecebe5;--mute:#9aa3b8;--line:#252e48;--acc:#e5915f;--acc2:#4fd1c0;--chip:#1c2540;--hero:#070b17;--hi:#ecebe5;--btn:#e5915f;--bi:#0b1020;--nav:rgba(11,16,32,.88)}}
+:root[data-theme="dark"]{--bg:#0b1020;--surf:#141b30;--ink:#ecebe5;--mute:#9aa3b8;--line:#252e48;--acc:#e5915f;--acc2:#4fd1c0;--chip:#1c2540;--hero:#070b17;--hi:#ecebe5;--btn:#e5915f;--bi:#0b1020;--nav:rgba(11,16,32,.88)}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--nav);z-index:20}
+h1,h2,h3{font-family:Fraunces,Georgia,'Times New Roman',serif;font-weight:600;line-height:1.12;margin:0;letter-spacing:-.01em}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--nav);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:26px;height:62px}
+.mono{display:flex;align-items:center;gap:10px;font:600 17px Fraunces,Georgia,serif;text-decoration:none}
+.mono i{width:34px;height:34px;border-radius:10px;background:var(--ink);color:var(--bg);display:grid;place-items:center;font:600 14px Inter,sans-serif;font-style:normal}
+nav .links{display:flex;gap:22px;margin-left:auto;font-size:14px;color:var(--mute)}
+nav .links a{text-decoration:none}nav .links a:hover{color:var(--acc)}
+.btn{display:inline-block;padding:12px 26px;border-radius:999px;background:var(--btn);color:var(--bi);font-weight:600;text-decoration:none;font-size:15px;border:0;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(184,102,47,.35)}
+.btn.s{padding:8px 18px;font-size:13.5px}
+.btn.o{background:transparent;border:1px solid rgba(255,255,255,.3);color:var(--hi)}
+.tg{border:1px solid var(--line);background:var(--surf);color:var(--ink);border-radius:999px;width:36px;height:36px;cursor:pointer;font-size:15px}
+.hero{background:var(--hero);color:var(--hi);position:relative;overflow:hidden;padding:84px 0 110px}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse at 70% 30%,#000 0,transparent 70%);mask-image:radial-gradient(ellipse at 70% 30%,#000 0,transparent 70%)}
+.hero::after{content:"";position:absolute;right:-140px;top:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,var(--acc) 0,transparent 66%);opacity:.3}
+.hg{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center;position:relative;z-index:1}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;letter-spacing:.16em;text-transform:uppercase;font-size:12px;font-weight:600;color:var(--acc)}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--acc)}
+.hero h1{font-size:clamp(36px,5.6vw,64px);margin:18px 0 20px}
+.hero h1 em{font-style:italic;color:var(--acc);font-weight:500}
+.hero p.l{font-size:clamp(16px,2vw,19px);opacity:.85;max-width:600px;margin:0}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.snap{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:26px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.snap .nm{font:600 24px Fraunces,Georgia,serif}
+.snap .rl{font-size:13.5px;opacity:.75;margin-bottom:18px}
+.snap dl{margin:0;display:grid;gap:12px}
+.snap dt{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);font-weight:600}
+.snap dd{margin:2px 0 0;font-size:14.5px}
+.avail{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-size:13px;background:rgba(79,209,192,.12);color:#6fe3d3;padding:6px 14px;border-radius:999px}
+.avail::before{content:"";width:8px;height:8px;border-radius:50%;background:#4fd1c0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));background:var(--surf);border:1px solid var(--line);border-radius:18px;margin-top:-52px;position:relative;z-index:2;box-shadow:0 18px 40px rgba(11,21,48,.12);overflow:hidden}
+.st{padding:24px 26px;border-right:1px solid var(--line)}.st:last-child{border:0}
+.st b{font:600 34px Fraunces,Georgia,serif;color:var(--acc);display:block;line-height:1.1}
+.st span{font-size:13px;color:var(--mute)}
+section{padding:84px 0 0}
+.sh{display:flex;flex-direction:column;gap:10px;margin-bottom:36px;max-width:720px}
+h2{font-size:clamp(30px,4.2vw,44px)}
+.lead{color:var(--mute);margin:0;font-size:17px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:28px;position:relative;transition:transform .25s,box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(11,21,48,.1);border-color:var(--acc)}
+.card .n{position:absolute;right:24px;top:20px;font:600 42px Fraunces,Georgia,serif;color:var(--chip)}
+.ic{width:46px;height:46px;border-radius:13px;background:var(--ink);color:var(--bg);display:grid;place-items:center;font:600 14px Inter,sans-serif;letter-spacing:.04em;margin-bottom:18px}
+.card h3{font-size:22px;margin-bottom:8px;max-width:85%}
+.card .sub{font-size:14.5px;color:var(--mute);margin:0 0 16px}
+ul{margin:0;padding:0;list-style:none;font-size:14.5px}
+li{margin-bottom:7px;padding-left:22px;position:relative}
+li::before{content:"";position:absolute;left:2px;top:.62em;width:10px;height:2px;background:var(--acc)}
+.for{font-size:13px;color:var(--acc2);font-weight:600;margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.flow::before{content:"";position:absolute;left:0;right:0;top:21px;height:2px;background:var(--line)}
+.fs{position:relative;padding-right:22px}
+.fs b{width:44px;height:44px;border-radius:50%;background:var(--bg);border:2px solid var(--acc);color:var(--acc);display:grid;place-items:center;font:600 16px Fraunces,Georgia,serif;position:relative;z-index:1}
+.fs h3{font-size:20px;margin:16px 0 6px}.fs p{margin:0;font-size:14.5px;color:var(--mute)}
+.tl{position:relative;padding-left:34px}
+.tl::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.ti{position:relative;margin-bottom:22px;background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:22px 26px}
+.ti::before{content:"";position:absolute;left:-34px;top:28px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--acc)}
+.ti .yr{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:600}
+.ti h3{font-size:20px;margin:4px 0}.ti .org{font-size:13.5px;color:var(--mute);margin-bottom:8px}.ti p{margin:0;font-size:14.5px}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{background:var(--chip);border-radius:8px;padding:4px 12px;font-size:13px}
+h4{margin:0 0 12px;font:600 12px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.band{background:var(--hero);color:var(--hi);border-radius:26px;padding:64px 40px;text-align:center;position:relative;overflow:hidden}
+.band::after{content:"";position:absolute;left:50%;bottom:-260px;width:520px;height:520px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,var(--acc) 0,transparent 66%);opacity:.3}
+.band>*{position:relative;z-index:1}
+.band h2{font-size:clamp(30px,5vw,50px)}.band p{max-width:580px;margin:14px auto 0;opacity:.85}
+.band .btn{margin-top:28px}
+footer{padding:48px 0 36px;color:var(--mute);font-size:13px;text-align:center}
+@media(max-width:860px){.hg{grid-template-columns:1fr}.flow{grid-template-columns:1fr;gap:22px}.flow::before{left:21px;right:auto;top:0;bottom:0;width:2px;height:auto}.fs{padding-left:62px;padding-right:0}.fs b{position:absolute;left:0;top:0}.fs h3{margin-top:8px}nav .links{display:none}nav .wrap{justify-content:space-between}.st{border-right:0;border-bottom:1px solid var(--line)}.band{padding:48px 24px}.hero{padding:56px 0 96px}}
+</style>
+</head>
+<body id="top">
+<nav><div class="wrap"><a class="mono" href="#top"><i>SS</i>Shruti Sachdeva</a>
+<div class="links"><a href="#services">Services</a><a href="#process">Approach</a><a href="#experience">Experience</a><a href="#toolkit">Toolkit</a></div>
+<a class="btn s" href="#contact">Work with me</a><button class="tg" id="tg" aria-label="Toggle theme">◐</button></div></nav>
+
+<header class="hero"><div class="wrap hg">
+<div>
+<div class="eyebrow">Project Management · Business Analysis</div>
+<h1>Clear requirements. <em>Predictable</em> delivery.</h1>
+<p class="l">I help teams plan, define and deliver software, SaaS, ERP and AI-driven projects, bridging business stakeholders and technical teams from first idea to launch.</p>
+<div class="cta"><a class="btn" href="#contact">Discuss your project</a><a class="btn o" href="#services">Explore services</a></div>
+</div>
+<aside class="snap">
+<div class="nm">Shruti Sachdeva</div><div class="rl">Project Manager &amp; Business Analyst</div>
+<dl><div><dt>Certified</dt><dd>PMP® (PMI) · Certified Scrum Master</dd></div>
+<div><dt>Domains</dt><dd>Enterprise Software · SaaS · ERP · AI/ML · e-Governance</dd></div>
+<div><dt>Methods</dt><dd>Agile · Scrum · Kanban · Waterfall</dd></div>
+<div><dt>Engagements</dt><dd>Freelance · Contract · Remote · International</dd></div></dl>
+<span class="avail">Open to new engagements</span>
+</aside></div></header>
+
+<main class="wrap">
+<div class="stats">
+<div class="st"><b>14</b><span>years of professional experience</span></div>
+<div class="st"><b>~7</b><span>years in project management &amp; business analysis</span></div>
+<div class="st"><b>PMP®</b><span>and Certified Scrum Master</span></div>
+<div class="st"><b>6</b><span>core services</span></div>
+</div>
+
+<section id="services">
+<div class="sh"><div class="eyebrow">What I do</div><h2>Services built around your delivery needs</h2><p class="lead">Engage one service or combine them for end-to-end support, from shaping requirements to coordinating delivery and testing.</p></div>
+<div class="grid">
+<div class="card"><span class="n">01</span><div class="ic">PM</div><h3>Project &amp; Delivery Management</h3><p class="sub">Keep scope, budget and timelines under control with a structured, Agile-first approach.</p>
+<ul><li>Project planning, WBS and milestone roadmaps</li><li>Scrum ceremonies and sprint coordination</li><li>Risk, dependency and technical-debt management</li><li>Stakeholder updates and expectation management</li></ul><div class="for">Best for: teams needing a hands-on PM or delivery lead</div></div>
+<div class="card"><span class="n">02</span><div class="ic">BA</div><h3>Business Analysis &amp; Requirements</h3><p class="sub">Turn ideas and operational needs into documentation designers and developers can build from.</p>
+<ul><li>Requirement discovery and prioritisation</li><li>BRD, SRS and functional specifications</li><li>User stories with acceptance criteria</li><li>Process flows, use cases and wireframes</li></ul><div class="for">Best for: new products, redesigns and unclear scope</div></div>
+<div class="card"><span class="n">03</span><div class="ic">ERP</div><h3>SaaS &amp; ERP Functional Consulting</h3><p class="sub">Understand how platforms and workflows fit your accounting, inventory and operations needs.</p>
+<ul><li>Capability review across Inventory, Logistics, Accounting and Finance</li><li>Comparative research on Zoho, Odoo and QuickBooks</li><li>Avalara tax-automation research (US, Canada, international)</li><li>SaaS and Salesforce-based project delivery</li></ul><div class="for">Best for: teams selecting or planning a SaaS/ERP platform</div></div>
+<div class="card"><span class="n">04</span><div class="ic">AI</div><h3>AI Project Coordination &amp; Automation</h3><p class="sub">Bring structure to AI/ML projects and reduce manual project-management effort.</p>
+<ul><li>End-to-end coordination from planning to deployment</li><li>Bridging AI/ML engineers and business stakeholders</li><li>Jira + Atlassian Rovo automation for issues, grooming and sprint insights</li><li>Management of data dependencies and risks</li></ul><div class="for">Best for: AI initiatives needing delivery structure</div></div>
+<div class="card"><span class="n">05</span><div class="ic">QA</div><h3>UAT &amp; Quality Assurance Support</h3><p class="sub">Improve functional coverage and release confidence before go-live.</p>
+<ul><li>UAT scenario definition and test-case review</li><li>Requirement Traceability Matrices (RTM)</li><li>Defect logging and tracking in Jira, Bugzilla and Zoho</li><li>Functional quality reviews</li></ul><div class="for">Best for: teams preparing a release or UAT cycle</div></div>
+<div class="card"><span class="n">06</span><div class="ic">TPM</div><h3>Technical Project Management</h3><p class="sub">A single point of coordination between business, design and engineering.</p>
+<ul><li>Cross-functional team coordination</li><li>Governance calls, reviews and stand-ups</li><li>UI/UX and technical team alignment</li><li>Delivery tracking in Jira or Azure DevOps</li></ul><div class="for">Best for: multi-team, multi-stakeholder projects</div></div>
+</div></section>
+
+<section id="process">
+<div class="sh"><div class="eyebrow">Approach</div><h2>A simple, transparent way of working</h2><p class="lead">Adapted to your team size and methodology: Agile, Scrum, Kanban or Waterfall.</p></div>
+<div class="flow">
+<div class="fs"><b>1</b><h3>Discover</h3><p>Understand goals, stakeholders, constraints and the current state.</p></div>
+<div class="fs"><b>2</b><h3>Define</h3><p>Agree scope, requirements, milestones and ways of working.</p></div>
+<div class="fs"><b>3</b><h3>Deliver</h3><p>Coordinate sprints, track risks and keep everyone informed.</p></div>
+<div class="fs"><b>4</b><h3>Validate</h3><p>Support UAT, review quality and hand over with clear documentation.</p></div>
+</div></section>
+
+<section id="experience">
+<div class="sh"><div class="eyebrow">Track record</div><h2>Experience behind each service</h2><p class="lead">Fourteen years across product companies, consultancies and government digital programmes.</p></div>
+<div class="tl">
+<div class="ti"><div class="yr">Nov 2025 – Present</div><h3>AI/ML Project Delivery &amp; Workflow Automation</h3><div class="org">Netsmartz Infotech · Project Manager</div><p>Coordinating AI/ML engineering teams, data models and web applications; using Atlassian Rovo to automate Jira issue creation, backlog grooming and sprint insights.</p></div>
+<div class="ti"><div class="yr">Jan 2025 – Oct 2025</div><h3>HTAS 2.0: Functional Analysis &amp; Solution Definition</h3><div class="org">CMS Pvt. Ltd. · Functional Lead</div><p>Defined BRDs, SRS, wireframes, workflows and UAT scenarios, aligning stakeholders, design and technical teams.</p></div>
+<div class="ti"><div class="yr">May 2022 – Nov 2024</div><h3>SaaS &amp; Salesforce Projects · ERP Research</h3><div class="org">RVN Technologies · Project Manager &amp; Business Analyst</div><p>Delivered multiple projects against scope, budget and timelines with WBS, Scrum and Azure DevOps; assessed Zoho, Odoo and QuickBooks plus Avalara tax automation.</p></div>
+<div class="ti"><div class="yr">Mar 2020 – Apr 2022</div><h3>Punjab Government e-Governance: eSewa &amp; PPSC</h3><div class="org">Directorate of Governance Reforms, Mohali · Quality &amp; Business Analyst</div><p>Produced documentation and wireframes, maintained RTMs, reviewed test cases and tracked defects.</p></div>
+<div class="ti"><div class="yr">Jul 2012 – Sep 2019</div><h3>Agile Business Analysis &amp; Delivery</h3><div class="org">Debut Infotech · Host Lever · Business Analyst &amp; Project Manager</div><p>Requirements, user stories with acceptance criteria, workflow design and Agile ceremonies for cross-functional teams.</p></div>
+</div></section>
+
+<section id="toolkit">
+<div class="sh"><div class="eyebrow">Toolkit</div><h2>Tools, deliverables &amp; credentials</h2></div>
+<div class="grid">
+<div class="card"><h4>Tools</h4><div class="chips" id="tools"></div></div>
+<div class="card"><h4>Typical deliverables</h4><div class="chips" id="deliv"></div></div>
+<div class="card"><h4>Certifications &amp; education</h4><ul><li><b>PMP®</b>: Project Management Professional, PMI</li><li><b>CSM</b>: Certified Scrum Master</li><li>IT Project Budget &amp; Cost Management</li><li>B.Tech, Computer Science · Kurukshetra University</li></ul></div>
+</div></section>
+
+<section id="contact">
+<div class="band"><div class="eyebrow" style="justify-content:center">Let’s work together</div><h2 style="margin-top:14px">Have a project in mind?</h2>
+<p>Share a short brief with your goals, timeline and team. We can then agree the right model: a fixed-scope project, an ongoing contract or a focused advisory engagement.</p>
+<a class="btn" href="#top">Start a conversation</a></div></section>
+</main>
+<footer>© Shruti Sachdeva · PMP®-Certified Project Manager &amp; Business Analyst</footer>
+<script>
+function chips(id,a){document.getElementById(id).innerHTML=a.map(function(x){return '<span class="chip">'+x+'</span>'}).join('')}
+chips('tools',['Jira','Atlassian Rovo','Azure DevOps','Zoho','Confluence','Trello','Monday.com','ClickUp','Balsamiq','Whimsical','Lucidchart','Draw.io','Bugzilla']);
+chips('deliv',['Project plan','WBS','Roadmap','BRD','SRS','FRD','User stories','Wireframes','Process flows','RTM','UAT scenarios','Status reports']);
+document.getElementById('tg').addEventListener('click',function(){var d=document.documentElement,dark=getComputedStyle(d).getPropertyValue('--bg').trim()==='#0b1020';d.setAttribute('data-theme',dark?'light':'dark')});
+</script>
+</body>
+</html>
